@@ -3,11 +3,9 @@
 import React from "react";
 import Head from "next/head";
 
-
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-
   const [showNavMenu, setNavMenu] = React.useState(false);
   return (
     <div>
@@ -45,8 +43,8 @@ export default function Home() {
                 </a>
               </li>
               <li className="nav_item" onClick={() => setNavMenu(false)}>
-                <a href="#skills" className="nav_link">
-                  <i className="uil uil-file-alt nav_icon"></i> Skills
+                <a href="#experience" className="nav_link">
+                  <i className="uil uil-file-alt nav_icon"></i> Experience
                 </a>
               </li>
               <li className="nav_item" onClick={() => setNavMenu(false)}>
@@ -74,9 +72,6 @@ export default function Home() {
           </div>
 
           <div className="nav_btns">
-            {/* theme change button */}
-            <i className="uil uil-moon change-theme" id="theme-button"></i>
-
             <div
               className="nav_toggle"
               id="nav-toggle"
@@ -94,7 +89,7 @@ export default function Home() {
         <section className="home section" id="home">
           <div className="home_container container grid">
             <div className="home_content grid">
-              <div className="home_social">
+              {/* <div className="home_social">
                 <a href="" className="home_social-icon">
                   <i className="uil uil-linkedin-alt"></i>
                 </a>
@@ -102,24 +97,20 @@ export default function Home() {
                   <i className="uil uil-github-alt"></i>
                 </a>
                 <a href="" className="home_social-icon">
-                <i className="uil uil-whatsapp"></i>
+                  <i className="uil uil-whatsapp"></i>
                 </a>
-              </div>
-
-              <div className="home_img">
-              
-                    <img
-                      className="home_blob-img"
-                      alt="The users profile picture displayed on home section"
-                      src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
-                    />
-              </div>
+              </div> */}
 
               <div className="home_data">
-                <h1 className="home_title">Hi, I am David</h1>
+                <p className="home_intro">Hi, my name is</p>
+                <h1 className="home_title">David Adeyemi</h1>
+                <h1 className="home_title_1">I build things for the web.</h1>
                 <h3 className="home_subtitle">Software Developer</h3>
                 <p className="home_description">
                   High level experiece in web design and Knowledge, producing
+                  quality work.High level experiece in web design and Knowledge, producing
+                  quality work.High level experiece in web design and Knowledge, producing
+                  quality work.High level experiece in web design and Knowledge, producing
                   quality work.
                 </p>
                 <a href="#contact" className="button button--flex">
@@ -143,150 +134,83 @@ export default function Home() {
           <h2 className="section_title">About Me</h2>
           <span className="section_subtitle">Dave the software developer</span>
           <div className="about_container container grid">
-            <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="" className="about_img" />
+            <img
+              src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+              alt=""
+              className="about_img"
+            />
 
             <div className="about_data">
               <p className="about_description">
-              Hello! My name is Brittany and I enjoy creating things that live on the internet.
-               My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                Hello! My name is Brittany and I enjoy creating things that live
+                on the internet. My interest in web development started back in
+                2012 when I decided to try editing custom Tumblr themes — turns
+                out hacking together a custom reblog button taught me a lot
+                about HTML & CSS!
               </p>
-              <p>Here are a few technologies I’ve been working with recently:</p>
+              <p className="about_description">
+                Hello! My name is Brittany and I enjoy creating things that live
+                on the internet.
+              </p>
+              <p className="about_description">
+                Here are a few technologies I’ve been working with recently:
+              </p>
               <div className="about_info">
-                <div>
-                  <span className="about_info-title">01+</span>
-                  <span className="about_info-name">Years <br/> Expereience </span>
+                <div className="about_info-title">
+                  <i className="uil uil-angle-double-right about_icon"></i><p className="about_skill">Javascript</p>
                 </div>
-              
-                <div>
-                  <span className="about_info-title">20</span>
-                  <span className="about_info-name">Completed <br/> Projects </span>
+
+                <div className="about_info-title">
+                  <i className="uil uil-angle-double-right about_icon"></i><p className="about_skill">Typescript</p>
                 </div>
-  
-                <div>
-                  <span className="about_info-title">01+</span>
-                  <span className="about_info-name">Companies <br/> Worked </span>
+
+                <div className="about_info-title">
+                  <i className="uil uil-angle-double-right about_icon"></i><p className="about_skill">React</p>
                 </div>
+
+                <div className="about_info-title">
+                  <i className="uil uil-angle-double-right about_icon"></i><p className="about_skill">Next js</p>
+                </div>
+                
+
+                
+
               </div>
 
               <div className="about_buttons">
                 <a href="" className="button button-flex">
-                  Download CV<i className="uil uil-download-alt button_icon"></i>
+                  Download CV
+                  <i className="uil uil-download-alt button_icon"></i>
                 </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SKILLS */}
-        {/* <section className="skills section" id="skills">
-          <h2 className="section_title">Skills</h2>
-          <span className="section_subtitle">My technical level</span>
-          <div className="skills_container container grid">
-           
-            
-              <div className="skills_content">
-                <div className="skills_header">
-                  <i className="uil uil-brackets-curly skills_icon"></i>
-
-                  <div>
-                    <h1 className="skills_title">Frontend Development</h1>
-                    <span className="skills_subtitle">More than 1 year</span>
-
-                  </div>
-
-                  <i className="uil uil-angle-up skills_arrow"></i>
-                </div>
-
-                <div className="skills_list">
-
-                <div className="skills_data">
-                    <p className="skills_name">JAVASCRIPT</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">REACT</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">REDUX</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">NEXTJS</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">GRAPHQL</p>
-                  </div>
-                </div>
+        {/* Experience */}
+        <section className="experience section" id="experience">
+          <h2 className="section_title">My Experience</h2>
+          <span className="section_subtitle">Where I’ve Worked</span>
+          <div className="experience_container container">
+            <div className="experience_tab_container">
+              <div className="experience_tab_list experience_tab_active"><p>Mind2Mentor</p></div>
+              <div className="experience_tab_list "><p>Datage</p></div>
+            </div>
+            <div className="experience_tab_data">
+              <h3 className="experience_title">
+              Creative Technologist Co-op @ MullenLowe
+              </h3>
+              <p className="experience_date">July - December 2015</p>
+              <div className="experience_list">
+                <span><i className="uil uil-angle-double-right experience_icon"></i></span><span><p className="experience_description">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</p></span>
               </div>
-
-
-
-              <div className="skills_content">
-                <div className="skills_header">
-                  <i className="uil uil-brackets-curly skills_icon"></i>
-
-                  <div>
-                    <h1 className="skills_title">Backend Development</h1>
-                    <span className="skills_subtitle">More than 1 year</span>
-
-                  </div>
-
-                  <i className="uil uil-angle-up skills_arrow"></i>
-                </div>
-
-               <div className="skills_list">
-
-                <div className="skills_data">
-                    <p className="skills_name">JAVASCRIPT</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">REACT</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">REDUX</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">NEXTJS</p>
-                  </div>
-
-                  <div className="skills_data">
-                    <p className="skills_name">GRAPHQL</p>
-                  </div>
-                </div> 
+              <div className="experience_list">
+                <span><i className="uil uil-angle-double-right experience_icon"></i></span><span><p className="experience_description">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</p></span>
               </div>
-
-           
+             
+            </div>
           </div>
-        </section> */}
-
-        {/* EXPERIENCE */}
-
-        {/* <section className="experience section">
-          <h2 className="section_title">Experience</h2>
-          <span className="section_subtitle">My Personal Experience</span>
-
-          <div className="experience_container">
-              <div className="experience_right_title">
-                <h2>Minds2Menter</h2>
-              </div>
-              <div className="experience_info">
-                <h3 className="experience_title">
-                  Junior Software Developer
-                </h3>
-                <p className="experience_date">
-                2020, July 27 - 2021, January 27
-                </p>
-                <div className="experience_data_list">
-                  <span className="experience_data_item"><i className="uil uil-angle-double-right"></i><p>Helped build frontend of admin dashboard using typescript and react</p></span>
-                </div>
-              </div>
-          </div>
-        </section> */}
+        </section>
 
         {/* SERVICES */}
         <section className="services section" id="services">
@@ -295,112 +219,142 @@ export default function Home() {
 
           <div className="services_container container grid">
             <div className="services_content">
-            <div>
-              <i className="uil uil-web-grid services_icon"></i>
-              <h3 className="services_title">Web Design</h3>
-              {/* <p>Designing of websites and web apps is something i 
+              <div>
+                <i className="uil uil-web-grid services_icon"></i>
+                <h3 className="services_title">Web Design</h3>
+                {/* <p>Designing of websites and web apps is something i 
                 love to do, making pixel perfect designs,
                 responsive designs and also making sure my designs 
                 are browser compatible</p> */}
-            </div>
-            <span className="button button--flex button--small button--link services_button">View More <i className="uil uil-arrow-right button_icon"></i></span>
+              </div>
+              <span className="button button--flex button--small button--link services_button">
+                View More <i className="uil uil-arrow-right button_icon"></i>
+              </span>
             </div>
 
             <div className="services_content">
-            <div>
-              <i className="uil uil-web-grid services_icon"></i>
-              <h3 className="services_title">Web App</h3>
-              {/* <p>Designing of websites and web apps is something i 
+              <div>
+                <i className="uil uil-web-grid services_icon"></i>
+                <h3 className="services_title">Web App</h3>
+                {/* <p>Designing of websites and web apps is something i 
                 love to do, making pixel perfect designs,
                 responsive designs and also making sure my designs 
                 are browser compatible</p> */}
-            </div>
-            <span className="button button--flex button--small button--link services_button">View More <i className="uil uil-arrow-right button_icon"></i></span>
+              </div>
+              <span className="button button--flex button--small button--link services_button">
+                View More <i className="uil uil-arrow-right button_icon"></i>
+              </span>
             </div>
 
             <div className="services_content">
-            <div>
-              <i className="uil uil-web-grid services_icon"></i>
-              <h3 className="services_title">Web Design</h3>
-              {/* <p>Designing of websites and web apps is something i 
+              <div>
+                <i className="uil uil-web-grid services_icon"></i>
+                <h3 className="services_title">Web Design</h3>
+                {/* <p>Designing of websites and web apps is something i 
                 love to do, making pixel perfect designs,
                 responsive designs and also making sure my designs 
                 are browser compatible</p> */}
-            </div>
-            <span className="button button--flex button--small button--link services_button">View More <i className="uil uil-arrow-right button_icon"></i></span>
+              </div>
+              <span className="button button--flex button--small button--link services_button">
+                View More <i className="uil uil-arrow-right button_icon"></i>
+              </span>
             </div>
           </div>
         </section>
 
         {/* PORTFOLIO */}
         <section className="portfolio section" id="portfolio">
-           <h2 className="section_title">Portfolio</h2>
-           <span className="section_subtitle">Most recent web design work</span>
+          <h2 className="section_title">Portfolio</h2>
+          <span className="section_subtitle">Most recent web design work</span>
 
-           <div className="portfolio_container container">
-             <div>
-           
-    {/* portfolio 1 */}
-    <div className="portfolio_content grid">
-                 <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="" className="portfolio_img" />
+          <div className="portfolio_container container">
+            <div>
+              <div className="portfolio_content">
+                <div className="portfolio_img">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="portfolio_data">
+                  <p className="featured_portfolio">Featured Project</p>
+                  <h3 className="porfolio_title">Modern title</h3>
+                  <p className="portfolio_description">
+                    Designing of websites and web apps is something i love to
+                    do, making pixel perfect designs, responsive designs and
+                    also making sure my designs are browser compatible
+                  </p>
+                  <div className="portfolio_stack">
+                    <span>Html</span> <span>Css</span>
+                  </div>
+                  <div>
+                    <i className="uil uil-github-alt portfolio_icon"></i>
+                    <i className="uil uil-external-link-alt portfolio_icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                 <div className="portfolio_data">
-                   <h3 className="porfolio_title">Modern title</h3>
-                   <p className="portfolio_description">
-                   Designing of websites and web apps is something i 
-                love to do, making pixel perfect designs,
-                responsive designs and also making sure my designs 
-                are browser compatible
-                   </p>
-                   <a href="" className="button button--flex button--small portfolio_button">Demo <i className="uil uil-arrow-right button_icon"></i></a>
-                 </div>
-               </div>
+          <div className="design_container container">
+            <div>
+              <div className="design_content">
+                <div className="design_grid grid">
+                  <div className="design_img">
+                    <img
+                      src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                      alt=""
+                    />
+                  </div>
 
-    {/* portfolio 2 */}
-    <div className="portfolio_content grid">
-                 <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="" className="portfolio_img" />
+                  <div className="design_data">
+                    <h3 className="design_title">Modern title</h3>
+                    <p className="design_description">
+                      Designing of websites and web apps is something i love to
+                      do, making pixel perfect designs, responsive designs and
+                      also making sure my designs are browser compatible
+                    </p>
+                    <div className="design_stack">
+                      <span>Html</span> <span>Css</span>
+                    </div>
+                    <div>
+                      <i className="uil uil-github-alt design_icon"></i>
+                      <i className="uil uil-external-link-alt design_icon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                 <div className="portfolio_data">
-                   <h3 className="porfolio_title">Modern title</h3>
-                   <p className="portfolio_description">
-                   Designing of websites and web apps is something i 
-                love to do, making pixel perfect designs,
-                responsive designs and also making sure my designs 
-                are browser compatible
-                   </p>
-                   <a href="" className="button button--flex button--small portfolio_button">Demo <i className="uil uil-arrow-right button_icon"></i></a>
-                 </div>
-               </div>
+        {/* other noteworthy projects */}
+        <section className="noteworthy section" id="portfolio">
+          <h2 className="section_title">Other Noteworthy Projects</h2>
+          <span className="section_subtitle">Most recent web design work</span>
 
-    {/* portfolio 2 */}
-    <div className="portfolio_content grid">
-                 <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="" className="portfolio_img" />
-
-                 <div className="portfolio_data">
-                   <h3 className="porfolio_title">Modern title</h3>
-                   <p className="portfolio_description">
-                   Designing of websites and web apps is something i 
-                love to do, making pixel perfect designs,
-                responsive designs and also making sure my designs 
-                are browser compatible
-                   </p>
-                   <a href="" className="button button--flex button--small portfolio_button">Demo <i className="uil uil-arrow-right button_icon"></i></a>
-                 </div>
-               </div>
-
-             </div>
-
-             {/* add arrows */}
-             {/* <div className="swiper-button-next">
-               <i className="uil uil-angle-right-b swiper-porfolio-icon"></i>
-             </div>
-             <div className="swiper-button-prev">
-             <i className="uil uil-angle-left-b swiper-porfolio-icon"></i>
-             </div> */}
-
-             {/* add pagination */}
-             {/* <div className="swiper-pagination"></div> */}
-           </div>
+          <div className="noteworthy_container container">
+            <div className="noteworthy_project">
+              <div className="noteworthy_project_icons">
+                <i className="uil uil-folder noteworthy_icon_1"></i>
+                <div className="noteworthy_project_sub_icons">
+                  <i className="uil uil-github-alt noteworthy_icon_2"></i>
+                  <i className="uil uil-external-link-alt noteworthy_icon_2"></i>
+                </div>
+              </div>
+              <h3 className="noteworthy_project_title">
+                Time to have more fun
+              </h3>
+              <p className="noteworthy_project_description">
+                Can help in increasing the quantity and quality of traffic to
+                your website through organic search engine results, and rank
+                your site higher in search results
+              </p>
+              <div className="noteworthy_project_stack">
+                <span>Html</span> <span>Css</span>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* PROJECT IN MIND*/}
@@ -410,14 +364,20 @@ export default function Home() {
               <div className="project_data">
                 <div className="project_title">
                   <h2 className="project_title">
-                  You have a new project or need a software developer</h2>
+                  Get In Touch
+                  </h2>
                   <p className="project_description">
-                    Contact me now and let's start building or creating something</p> 
-                    <a href="#contact" className="button button--flex button--white">
-                      Contact Me <i className="uil uil-message project_icon button_icon"></i>
-                    </a>
+                    Contact me now and let's start building or creating
+                    something
+                  </p>
+                  <a
+                    href="#contact"
+                    className="button button--flex button--white"
+                  >
+                    Contact Me{" "}
+                    <i className="uil uil-message project_icon button_icon"></i>
+                  </a>
                 </div>
-                {/* <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="" className="project_img" /> */}
               </div>
             </div>
           </div>
@@ -445,7 +405,9 @@ export default function Home() {
                 <i className="uil uil-envelope contact_icon"></i>
                 <div>
                   <h3 className="contact_title">Email</h3>
-                  <span className="contact_subtitle">dv.davidadeyemi@gmail.com</span>
+                  <span className="contact_subtitle">
+                    dv.davidadeyemi@gmail.com
+                  </span>
                 </div>
               </div>
 
@@ -453,77 +415,62 @@ export default function Home() {
                 <i className="uil uil-map-marker contact_icon"></i>
                 <div>
                   <h3 className="contact_title">Location</h3>
-                  <span className="contact_subtitle">Bangalore,Karnataka - India</span>
+                  <span className="contact_subtitle">
+                    Bangalore,Karnataka - India
+                  </span>
                 </div>
               </div>
             </div>
 
-<form action="" className="contact_form grid">
-  <div className="contact_inputs grid">
-    <div className="contact_content">
-      <label htmlFor="" className="contact_label">Name</label>
-      <input type="text" className="contact_input" />
-    </div>
-    <div className="contact_content">
-      <label htmlFor="" className="contact_label">Email</label>
-      <input type="email" className="contact_input" />
-    </div>
-    <div className="contact_content">
-      <label htmlFor="" className="contact_label">Project</label>
-      <input type="text" className="contact_input" />
-    </div>
-    <div className="contact_content">
-      <label htmlFor="" className="contact_label">Message</label>
-      <textarea name="" id="" cols="0" rows="7" className="contact_input"></textarea>
-    </div>
+            <form action="" className="contact_form grid">
+              <div className="contact_inputs grid">
+                <div className="contact_content">
+                  <label htmlFor="" className="contact_label">
+                    Name
+                  </label>
+                  <input type="text" className="contact_input" />
+                </div>
+                <div className="contact_content">
+                  <label htmlFor="" className="contact_label">
+                    Email
+                  </label>
+                  <input type="email" className="contact_input" />
+                </div>
+                <div className="contact_content">
+                  <label htmlFor="" className="contact_label">
+                    Project
+                  </label>
+                  <input type="text" className="contact_input" />
+                </div>
+                <div className="contact_content">
+                  <label htmlFor="" className="contact_label">
+                    Message
+                  </label>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="0"
+                    rows="7"
+                    className="contact_input"
+                  ></textarea>
+                </div>
 
-    <div>
-      <a href="" className="button button--flex">
-        Send Message <i className="uil uil-message button_icon"> </i>
-      </a>
-    </div>
-  </div>
-</form>
-
+                <div>
+                  <a href="" className="button button--flex">
+                    Send Message{" "}
+                    <i className="uil uil-message button_icon"> </i>
+                  </a>
+                </div>
+              </div>
+            </form>
           </div>
         </section>
       </main>
 
       <footer className="footer">
         <div className="footer_bg">
-          <div className="footer_container container grid">
-            <div>
-              <h1 className="footer_title">Dave</h1>
-              <span className="footer_subtitle">Software Developer</span>
-            </div>
 
-            <ul className="footer_links">
-              <li>
-                <a href="" className="footer_link">Services</a>
-              </li>
-              <li>
-                <a href="" className="footer_link">Projects</a>
-              </li>
-              <li>
-                <a href="" className="footer_link">Contact</a>
-              </li>
-            </ul>
-
-            <div className="footer_socials">
-              <a href="" className="footer_social">
-                <i className="uil uil-facebook-f"></i>
-              </a>
-              <a href="" className="footer_social">
-              <i className="uil uil-instagram"></i>
-              </a>
-              <a href="" className="footer_social">
-              <i className="uil uil-twitter-alt"></i>
-              </a>
-            </div>
-
-          </div>
-
-          <p className="footer_copy">&#169; Dave the creator. All rights reserved </p>
+          <p className="footer_copy">&#169; Designed & Built by David Adeyemi </p>
         </div>
       </footer>
 
