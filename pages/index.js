@@ -147,11 +147,13 @@ export default function Home() {
           <h2 className="section_title">About Me</h2>
           <span className="section_subtitle">{userData.aboutMeSubheader}</span>
           <div className="about_container container grid">
+            <div className="about_img">
             <img
-              src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+              src={userData.aboutPhoto}
               alt="A guy putting on glasses in a printed shirt"
-              className="about_img"
             />
+            </div>
+            
 
             <div className="about_data">
               <p className="about_description">
@@ -294,7 +296,8 @@ export default function Home() {
                         ))}
                       </div>
                       <div>
-                        <i className="uil uil-external-link-alt design_icon"></i>
+                        <a href={design.url} target="_blank" rel="noreferrer">
+                        <i className="uil uil-external-link-alt design_icon"></i></a>
                       </div>
                     </div>
                   </div>
@@ -446,13 +449,17 @@ export default function Home() {
       <footer className="footer">
         <div className="footer_bg">
           <div className="footer_social">
-            <a href="" className="footer_social-icon">
+            <a href={userData.linkedIn} target="_blank"
+                    rel="noreferrer" className="footer_social-icon">
               <i className="uil uil-linkedin-alt"></i>
             </a>
-            <a href="" className="footer_social-icon">
+            <a href={userData.gitHub} target="_blank"
+                    rel="noreferrer" className="footer_social-icon">
               <i className="uil uil-github-alt"></i>
             </a>
-            <a href="" className="footer_social-icon">
+            <a href={`https://wa.me/${userData.whatsapp}`}
+                    target="_blank"
+                    rel="noreferrer" className="footer_social-icon">
               <i className="uil uil-whatsapp"></i>
             </a>
           </div>

@@ -41,6 +41,7 @@ export const userData = {
     gitHub: "https://github.com/David-Ade-Creator",
     whatsapp: "+918971558784",
     aboutMeSubheader: "Dave the software Developer",
+    aboutPhoto: "/images/aboutphoto2.jpeg",
     aboutMeDescription1: "Hello! My name is David and I enjoy creating things that live on the internet. My interest in software engineering started back in 2019 when I decided to try creating a landing page for an ecommerce shoe platform — this taught me alot about HTML & CSS!",
     aboutMeDescription2: "Hello! My name is David and I enjoy creating things that live on the internet.",
     skills: ["Html", "Css", "Javascript", "Typescript", "React", "Next", "Gatsby", "Node js", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
@@ -94,7 +95,7 @@ export const userData = {
             image: "/images/bloom.png",
             url: "https://bloomgraphy.netlify.app",
             repo:"https://github.com/David-Ade-Creator/bloomgraphy-clientside",
-            stacks: ["Less" , "React","Redux", "Node-js", "Graphql", "ApolloClient","Ant Design", "Heroku", "Amazon s3", "Heroku", "Netlify"]
+            stacks: ["React","Redux", "Nodejs", "Graphql", "ApolloClient","Ant Design","Less" ,  "Heroku", "Amazon s3", "Heroku", "Netlify"]
         },
         {
             title: "Quea",
@@ -103,7 +104,7 @@ export const userData = {
             image: "/images/delivery.png",
             url: "https://quea.netlify.app",
             repo:"https://github.com/David-Ade-Creator/quea",
-            stacks: ["React","Redux", "Node-js", "Express", "Ant-Design", "Aws-s3", "Heroku", "Netlify"],
+            stacks: ["React","Redux", "Nodejs", "Express", "Ant-Design", "Aws-s3", "Heroku", "Netlify"],
         },
         {
             title: "Clause Reservation",
@@ -112,7 +113,7 @@ export const userData = {
             image: "/images/clause.png",
             url: "https://clause-reservation.herokuapp.com",
             repo:"https://github.com/David-Ade-Creator/dinner-reservation",
-            stacks: ["React", "Redux", "Node-js", "Express", "React-Bootstrap", "Aws-s3", "Heroku"],
+            stacks: ["React", "Redux", "Nodejs", "Express", "React-Bootstrap", "Aws-s3", "Heroku"],
         },
         {
             title: "M3 movies",
@@ -121,7 +122,7 @@ export const userData = {
             image : "/images/m3movies.png",
             url: "https://m3movies.netlify.app",
             repo:"https://github.com/David-Ade-Creator/m3movieclient",
-            stacks : ["React", "Node-js", "Express","Heroku","Imdb Api", "Netlify"],
+            stacks : ["React", "Nodejs", "Express","Heroku","Imdb Api", "Netlify"],
         },
         {
             title: "Cryptoverse",
@@ -130,7 +131,7 @@ export const userData = {
             image: "/images/cryptoverse.png",
             url: "https://crytoverse.netlify.app",
             repo:"https://github.com/David-Ade-Creator/cryptoverse",
-            stacks: ["React", "Redux-Toolkit", "Rapid-Api"],
+            stacks: ["React", "ReduxToolkit", "RapidApi"],
         },
         {
             title: "Halftimers Blog",
@@ -139,7 +140,7 @@ export const userData = {
             image: "/images/halftimers.png",
             url: "https://halftimers.netlify.app",
             repo:"https://github.com/David-Ade-Creator/blog-client",
-            stacks: ["Next", "Strapi-CMS", "Netlify", "Heroku"],
+            stacks: ["Next", "Strapi", "Netlify", "Heroku"],
         }
     ],
     webdesigns : [
@@ -154,35 +155,35 @@ export const userData = {
             title: "Travel Design",
             description : "A pixel perfect responsive design of a travel website using html and css, this design is perfect regardless of which device it works on.",
             image : "/images/travel.png",
-            url: "",
+            url: "https://travel-round.netlify.app",
             stacks: ["Html", "Css"],
         },
         {
             title: "Restaurant Website",
             description : "Perfection has never been any better, a well design and responsive restaurant website using html and css.",
             image : "/images/restaurant.png",
-            url: "",
+            url: "https://grilleats.netlify.app",
             stacks: ["Html", "Css"],
         },
         {
             title: "Porfolio Website",
             description : "Almost all freelancing professions now need a porfolio, check out this simple responsive porfolio with html and css.",
             image : "/images/porfolio.png",
-            url: "",
+            url: "https://skporfolio.netlify.app",
             stacks: ["Html", "Css"],
         },
         {
             title:  "Delivery Website",
             description : "A pixel perfect responsive design of a delivery website using html and css, this design is perfect regardless of which device it works on.",
             image : "/images/delivery.png",
-            url: "",
+            url: "https://speeddrop.netlify.app",
             stacks: ["Html", "Css"],
         },
         {
             title:  "Headphones Landing Page",
             description : "A pixel perfect responsive design of a headphones website using html and css, this design is perfect regardless of which device it works on.",
             image : "/images/headphones.png",
-            url: "",
+            url: "https://solidears.netlify.app",
             stacks: ["Html", "Css"],
         },
     ]
