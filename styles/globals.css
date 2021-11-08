@@ -705,6 +705,31 @@ margin-bottom: 0;
   color: #fff;
 }
 
+.porfolio_tab_buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.porfolio_tab_btn_active{
+  padding: .3rem .5rem;
+  background-color: var(--first-color);
+  border-radius: .2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.porfolio_tab_btn{
+  padding: .3rem .5rem;
+  border: 1px solid var(--first-color);
+  border-radius: .2rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 
 
 /* ========= Designs ============= */
@@ -1291,6 +1316,8 @@ margin-bottom: 0;
   .portfolio_content {
     align-items: center;
   }
+
+
 
   .design_content{
     grid-template-columns: repeat(2, 1fr);

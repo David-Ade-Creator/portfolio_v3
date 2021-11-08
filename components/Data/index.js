@@ -1,9 +1,41 @@
 export const userData = {
+    links : [
+        {
+            icon:"uil-estate",
+            title: "Home",
+            link: "#home",
+        },
+        {
+            icon:"uil-user",
+            title: "About",
+            link: "#about",
+        },
+        {
+            icon:"uil-file-alt",
+            title: "Experience",
+            link: "#experience",
+        },
+        {
+            icon:"uil-briefcase-alt",
+            title: "Services",
+            link: "#services",
+        },
+        {
+            icon:"uil-scenery",
+            title: "Porfolio",
+            link: "#portfolio",
+        },
+        {
+            icon:"uil-message",
+            title: "Contact",
+            link: "#contact",
+        },
+    ],
     intro: "Hi, my name is",
     name: "David Adeyemi",
     header: "I build things for the web.",
     title: "Software Developer",
-    description: "High level experiece in web design and Knowledge, producing quality work.High level experiece in web design and Knowledge, producing quality work.High level experiece in web design and Knowledge, producing quality work.High level experiece in web design and Knowledge, producing quality work.",
+    description: "I’m a software engineer specializing in building (and also designing) exceptional digital experiences. Solving problems with up to date technologies and turning ideas into exceptional applications that are accessible is one of my favourite thing to do.",
     emailAddress: "dv.davidadeyemi@gmail.com",
     linkedIn: "https://www.linkedin.com/in/david-adeyemi-085a171b2",
     gitHub: "https://github.com/David-Ade-Creator",
@@ -38,15 +70,18 @@ export const userData = {
         },
     ],
     services: [{
+        icon: "uil-web-grid",
             title: "Web Applications",
             description: "Web development has been my major interest, makes me feel like i am bringing an idea to life, which i am. Can build ranging from static websites down to dynamic web apps."
         },
         {
+            icon:"uil-globe",
             title: "Web Designs",
             description: "Designing of websites and web apps is something i love to do, making pixel perfect designs, responsive designs and also making sure my designs are browser compatible."
         },
         {
-            title: "Search Engine Optimization",
+            icon:"uil-credit-card-search",
+            title: "SEO",
             description: "SEO is a great way to get more customers,Can help in increasing the quantity and quality of traffic to your website through organic search engine results, and rank your site higher in search results"
         }
     ],
