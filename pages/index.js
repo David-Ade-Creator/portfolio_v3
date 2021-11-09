@@ -160,9 +160,6 @@ export default function Home() {
                 {userData.aboutMeDescription1}
               </p>
               <p className="about_description">
-                {userData.aboutMeDescription2}
-              </p>
-              <p className="about_description">
                 Here are a few technologies I’ve been working with recently:
               </p>
               <div className="about_info">
