@@ -143,16 +143,19 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
+  min-height: 80vh;
 }
 
 .section_title {
   font-size: var(--h1-font-size);
+  
 }
 
 .section_subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
+  color: var(--first-color-alt);
 }
 
 .section_title,
@@ -165,7 +168,7 @@ img {
   max-width: 960px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .grid {
@@ -613,6 +616,7 @@ margin-bottom: 0;
 .services_container {
   gap: 1.5rem;
   grid-template-columns: repeat(1, 1fr);
+  margin-bottom: var(--mb-4);
 }
 
 .services_content {
@@ -711,6 +715,7 @@ margin-bottom: 0;
 
 .featured_portfolio{
   font-size: var(--small-font-size);
+  color: var(--first-color-lighter);
 }
 
 .portfolio_description, .design_description{
@@ -725,6 +730,7 @@ margin-bottom: 0;
 }
 .portfolio_stack span, .design_stack span{
   padding: .2rem .3rem .2rem 0;
+  font-size: var(--smaller-font-size);
 }
 
 .portfolio_icon, .design_icon{
@@ -894,6 +900,7 @@ margin-bottom: 0;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; */
+  font-size: var(--small-font-size);
 }
 
 .noteworthy_project_stack{
@@ -902,7 +909,9 @@ margin-bottom: 0;
 }
 
 .noteworthy_project_stack span{
-  padding: .2rem;
+  padding: .2rem .3rem .2rem 0;
+  font-size: var(--smaller-font-size);
+  color: var(--first-color-alt);
 }
 
 
@@ -1210,6 +1219,7 @@ margin-bottom: 0;
     flex-direction: row;
     gap: 2rem;
   }
+
   .experience_tab_container{
     flex-basis: 30%;
     display: flex;
@@ -1243,6 +1253,7 @@ margin-bottom: 0;
   }
   
   .experience_tab_data{
+    flex-basis: 70%;
     padding: 0 1rem;
     margin: 0;
     min-height: 400px;
@@ -1321,7 +1332,7 @@ margin-bottom: 0;
     color: var(--text-color);
   }
   .portfolio_stack span{
-    padding: .2rem;
+    padding: .2rem .3rem .2rem 0;
   }
   
   .portfolio_icon{

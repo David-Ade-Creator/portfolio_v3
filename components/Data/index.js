@@ -61,7 +61,7 @@ export const userData = {
             name: "Datage Technologies",
             companyName: "Software developer @ Datage Technologies",
             position: "Software Developer",
-            duration: "February 11,2021 to October 11,2021",
+            duration: "February 11,2021 to Present,2021",
             responsibilities: [
                 "Build a vet store which handles modern vet problems.",
                 "Collaborated on all stages of systems development lifecycle from requirement gathering to production releases.",
