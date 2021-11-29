@@ -2,7 +2,7 @@ import React from 'react'
 import { userData } from '../Data';
 import WebAppCard from './webAppCard'
 import WebDesignCard from './webDesignCard';
-import { motion, useAnimation } from "framer-motion";
+import {useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 
@@ -12,7 +12,7 @@ function PortfolioSection() {
       userData.projects.filter((project) => project.isFeatured === true)
     );
     const animationControl = useAnimation();
-    const {inView, entry, ref} = useInView();
+    const {inView, ref} = useInView();
   
     if (inView) {
       animationControl.start({

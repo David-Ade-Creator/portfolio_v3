@@ -1,6 +1,4 @@
-import { motion } from 'framer-motion'
-import React from 'react'
-import { animationContainer, slideUpItems } from '../../utils/animation'
+import React from 'react';
 
 function NoteWorthyCard({noteworthyProjects}) {
     return (
@@ -8,13 +6,10 @@ function NoteWorthyCard({noteworthyProjects}) {
           <h2 className="section_title">Other Noteworthy Projects</h2>
           <span className="section_subtitle">Most recent web design work</span>
 
-          <motion.div
-          variants={animationContainer}
-          initial="hidden"
-          animate="visible"
+          <div
            className="noteworthy_container container">
             {noteworthyProjects.map((project, index) => (
-              <motion.div className="noteworthy_project" key={index} variants={slideUpItems}>
+              <div className="noteworthy_project" key={index}>
                 <div className="noteworthy_project_icons">
                   <i className="uil uil-folder noteworthy_icon_1"></i>
                   <div className="noteworthy_project_sub_icons">
@@ -24,18 +19,16 @@ function NoteWorthyCard({noteworthyProjects}) {
                 </div>
                 <h3 className="noteworthy_project_title">{project.title}</h3>
                 <p className="noteworthy_project_description">
-                  Can help in increasing the quantity and quality of traffic to
-                  your website through organic search engine results, and rank
-                  your site higher in search results
+                  {project.description}
                 </p>
                 <div className="noteworthy_project_stack">
                   {project.stacks.map((stack, index) => (
                     <span key={index}>{stack}</span>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </section>
     )
 }

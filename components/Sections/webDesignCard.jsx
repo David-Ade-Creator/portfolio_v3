@@ -1,34 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { animationContainer,slideUpItems } from "../../utils/animation";
+import { motion } from "framer-motion";
+
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 40, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 
 function WebDesignCard({ webdesigns }) {
-  const animationControl = useAnimation();
-    const {inView, entry, ref} = useInView();
-  
-    if (inView) {
-      animationControl.start("visible")
-    }
-
   return (
     <div className="design_container container" >
       <div>
         <motion.div
           className="design_content"
-          variants={animationContainer}
+          variants={container}
           initial="hidden"
           animate="visible"
-          ref={ref}
         >
           {webdesigns.map((design, index) => (
             <motion.div
               className="design_grid grid"
               key={index}
-              variants={slideUpItems}
+              variants={item}
             >
               <div className="design_img">
                 <img src={design.image} alt={design.title} />

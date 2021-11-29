@@ -3,8 +3,6 @@
 import React from "react";
 import Head from "next/head";
 import { userData } from "../components/Data";
-import WebDesignCard from "../components/Sections/webDesignCard";
-import WebAppCard from "../components/Sections/webAppCard";
 import NoteWorthyCard from "../components/Sections/noteworthycard";
 import Experience from "../components/Sections/experience";
 import PortfolioSection from "../components/Sections/porfolioSection";
@@ -107,33 +105,6 @@ export default function Home() {
         {/* other noteworthy projects */}
         <NoteWorthyCard noteworthyProjects={noteworthyProjects} />
 
-        {/* PROJECT IN MIND*/}
-        <section className="project section">
-          <div className="project_bg">
-            <div className="project_container container grid">
-              <div className="project_data">
-                <div className="project_title">
-                  <h2 className="project_title">Get In Touch</h2>
-                  <p className="project_description">
-                    Contact me now and let's start building or creating
-                    something
-                  </p>
-                  <a
-                    href="#contact"
-                    className="button button--flex button--white"
-                  >
-                    Contact Me{" "}
-                    <i className="uil uil-message project_icon button_icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* TESTIMONIAL */}
-        <section className="testimonial section"></section>
-
         {/* CONTACT ME */}
         <section className="contact section" id="contact">
           <h2 className="section_title">Contact Me</h2>
@@ -170,33 +141,26 @@ export default function Home() {
               </div>
             </div>
 
-            <form action="" className="contact_form grid">
+            <form action="https://formspree.io/f/xrgoyzbg" method="POST" className="contact_form grid">
               <div className="contact_inputs grid">
                 <div className="contact_content">
                   <label htmlFor="" className="contact_label">
                     Name
                   </label>
-                  <input type="text" className="contact_input" />
+                  <input type="text" name="name" className="contact_input" />
                 </div>
                 <div className="contact_content">
                   <label htmlFor="" className="contact_label">
                     Email
                   </label>
-                  <input type="email" className="contact_input" />
-                </div>
-                <div className="contact_content">
-                  <label htmlFor="" className="contact_label">
-                    Project
-                  </label>
-                  <input type="text" className="contact_input" />
+                  <input type="email" name="email" className="contact_input" />
                 </div>
                 <div className="contact_content">
                   <label htmlFor="" className="contact_label">
                     Message
                   </label>
                   <textarea
-                    name=""
-                    id=""
+                    name="message"
                     cols="0"
                     rows="7"
                     className="contact_input"
@@ -204,10 +168,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <a href="" className="button button--flex">
-                    Send Message{" "}
+                  <button type="submit" className="button button--flex" style={{outline:"none",border:"0"}}>
+                    Send Message
                     <i className="uil uil-message button_icon"> </i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </form>

@@ -27,7 +27,7 @@ function WebAppCard({ featuredProjects }) {
     <motion.div className="portfolio_container container" variants={container} initial="hidden" animate="visible">
     
         {featuredProjects.map((project, index) => (
-          <div className="portfolio_content" key={index} variants={item}>
+          <motion.div className="portfolio_content" key={index} variants={item}>
             <div className="portfolio_img">
               <img src={project.image} alt={project.title} />
             </div>
@@ -35,8 +35,7 @@ function WebAppCard({ featuredProjects }) {
               <p className="featured_portfolio">Featured Project</p>
               <h3 className="porfolio_title">{project.title}</h3>
               <p className="portfolio_description">
-                Designing of websites and web apps is something i love to do,
-                making pixel perfect designs
+                {project.description}
               </p>
               <div className="portfolio_stack">
                 {project.stacks.map((stack, i) => (
@@ -52,7 +51,7 @@ function WebAppCard({ featuredProjects }) {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
   );
