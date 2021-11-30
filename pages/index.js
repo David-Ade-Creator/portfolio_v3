@@ -28,7 +28,7 @@ export default function Home() {
           href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         />
         <meta name="description" content="Dave the creator" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/gitimage.png" />
       </Head>
 
       {/* HEADER */}

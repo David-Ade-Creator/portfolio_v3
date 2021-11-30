@@ -61,7 +61,7 @@ export const userData = {
             name: "Datage Technologies",
             companyName: "Software developer @ Datage Technologies",
             position: "Software Developer",
-            duration: "February 11,2021 to Present,2021",
+            duration: "February 11,2021 to November 30,2021",
             responsibilities: [
                 "Build a vet store which handles modern vet problems.",
                 "Collaborated on all stages of systems development lifecycle from requirement gathering to production releases.",
@@ -83,7 +83,7 @@ export const userData = {
         {
             icon:"uil-credit-card-search",
             title: "SEO",
-            description: "SEO is a great way to get more customers,Can help in increasing the quantity and quality of traffic to your website through organic search engine results, and rank your site higher in search results"
+            description: "SEO is a great way to get more customers,Can help in increasing the quantity of traffic to your website, and rank your site higher in search results."
         }
     ],
 
