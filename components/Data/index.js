@@ -44,7 +44,7 @@ export const userData = {
     aboutPhoto: "/images/aboutphoto2.jpeg",
     aboutMeDescription1: "Hello! My name is David and I enjoy creating things that live on the internet. My interest in software engineering started back in 2019 when I decided to try creating a landing page for an ecommerce shoe platform — this taught me alot about HTML & CSS!",
     aboutMeDescription2: "Hello! My name is David and I enjoy creating things that live on the internet.",
-    skills: ["Html", "Css", "Javascript", "Typescript", "React", "Next", "Gatsby", "Node js", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
+    skills: ["Html", "Css", "Javascript","Java", "Typescript", "React", "Next", "Gatsby", "Node js","Springboot", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
     experience: [{
         name: "Mind2mentor",
             companyName: "Junior Software Engineer @ Mind2Mentor",
@@ -61,7 +61,7 @@ export const userData = {
             name: "Datage Technologies",
             companyName: "Software developer @ Datage Technologies",
             position: "Software Developer",
-            duration: "February 11,2021 to November 30,2021",
+            duration: "February 11,2021 to December 30,2021",
             responsibilities: [
                 "Build a vet store which handles modern vet problems.",
                 "Collaborated on all stages of systems development lifecycle from requirement gathering to production releases.",

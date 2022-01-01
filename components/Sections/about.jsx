@@ -38,12 +38,12 @@ function About({ userData }) {
               })}
             </div>
 
-            <div className="about_buttons">
+            {/* <div className="about_buttons">
               <a href="softwarecv.pdf" className="button button-flex">
                 Download CV
                 <i className="uil uil-download-alt button_icon"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
