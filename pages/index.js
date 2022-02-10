@@ -116,7 +116,7 @@ export default function Home() {
                 <i className="uil uil-phone contact_icon"></i>
                 <div>
                   <h3 className="contact_title">Call Me</h3>
-                  <span className="contact_subtitle">8971558784</span>
+                  <span className="contact_subtitle">+447442580406</span>
                 </div>
               </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
                 <div>
                   <h3 className="contact_title">Location</h3>
                   <span className="contact_subtitle">
-                    Bangalore,Karnataka - India
+                    Bedfordshire - UK
                   </span>
                 </div>
               </div>

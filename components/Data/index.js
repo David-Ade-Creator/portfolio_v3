@@ -39,33 +39,34 @@ export const userData = {
     emailAddress: "dv.davidadeyemi@gmail.com",
     linkedIn: "https://www.linkedin.com/in/david-adeyemi-085a171b2",
     gitHub: "https://github.com/David-Ade-Creator",
-    whatsapp: "+918971558784",
+    whatsapp: "+447442580406",
     aboutMeSubheader: "Dave the software Developer",
     aboutPhoto: "/images/aboutphoto2.jpeg",
     aboutMeDescription1: "Hello! My name is David and I enjoy creating things that live on the internet. My interest in software engineering started back in 2019 when I decided to try creating a landing page for an ecommerce shoe platform — this taught me alot about HTML & CSS!",
     aboutMeDescription2: "Hello! My name is David and I enjoy creating things that live on the internet.",
-    skills: ["Html", "Css", "Javascript","Java", "Typescript", "React", "Next", "Gatsby", "Node js","Springboot", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
+    skills: ["Html", "Css", "Javascript", "Typescript", "React", "Next", "Gatsby", "Node js", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
     experience: [{
         name: "Mind2mentor",
             companyName: "Junior Software Engineer @ Mind2Mentor",
             position: "Junior Software Engineer",
-            duration: "2020, July 27 - 2021, January 27",
+            duration: "2021, Jan 11 - 2021, April 27",
             responsibilities: [
-                "Created react pages using ant design for the e-commerce platform",
-                "Written backend controllers in typescript using typeOrm",
-                "Worked on creating a whatsapp chatbot using botkit and WATI as the CRM provider",
-                "Delivered performance-driven and user-centric webapp that met all business requirements."
+                "Created react pages using ant design for the e-commerce platform.",
+                "Delivered clean efficient software under a Jira day-to-day flow.",
+                "Written backend controllers in typescript using typeOrm.",
+                "Worked on creating a whatsapp chatbot using botkit and WATI as the CRM provider.",
+                "Delivered performance-driven and user-centric web app that met all business requirements."
             ]
         },
         {
             name: "Datage Technologies",
             companyName: "Software developer @ Datage Technologies",
             position: "Software Developer",
-            duration: "February 11,2021 to December 30,2021",
+            duration: "June 04,2021 to December 30,2021",
             responsibilities: [
-                "Build a vet store which handles modern vet problems.",
+                "Designed prototype and architect software system that work and meets global standards.",
+                "Facilitated customization of systems by encouraging software engineering team to adopt emerging standard for software application development architecture and tools.",
                 "Collaborated on all stages of systems development lifecycle from requirement gathering to production releases.",
-                "Used React, graphql and apollo client for the frontend and used node js, graphql and mongodb for backend.",
                 "Revised, modularized and updated old code bases to modern development standards, reducing operating costs and improving functionality."
             ]
         },
