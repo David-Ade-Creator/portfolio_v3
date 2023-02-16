@@ -4,6 +4,7 @@ import WebAppCard from './webAppCard'
 import WebDesignCard from './webDesignCard';
 import {useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import WarningCard from './warningCard';
 
 
 function PortfolioSection() {
@@ -24,8 +25,10 @@ function PortfolioSection() {
     }
     return (
         <section ref={ref} className="portfolio section" id="portfolio">
+          
         <h2 className="section_title">Portfolio</h2>
         <span className="section_subtitle" style={{marginBottom:"0"}}>Most recent web design work</span>
+        {/* <WarningCard text="Testing the warning card" /> */}
         <div className="porfolio_tab_buttons container">
           <span className={`${porfolioTab === 1 ? "porfolio_tab_btn_active" : "porfolio_tab_btn" }`}  onClick={()=>setPorfolioTab(1)}>Web Applications</span><span className={`${porfolioTab === 2 ? "porfolio_tab_btn_active" : "porfolio_tab_btn" }`} onClick={()=>setPorfolioTab(2)}>Web Design</span>
         </div>

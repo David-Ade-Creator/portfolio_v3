@@ -34,28 +34,28 @@ export const userData = {
     intro: "Hi, my name is",
     name: "David Adeyemi",
     header: "I build things for the web.",
-    title: "Software Developer",
-    description: "I’m a software engineer specializing in building (and also designing) exceptional digital experiences. Solving problems with up to date technologies and turning ideas into exceptional applications that are accessible is one of my favourite thing to do.",
+    title: "Software Engineer",
+    description: "I’m a software engineer specialized in building (and also designing) exceptional digital experiences. Solving problems with up to date technologies and turning ideas into exceptional applications that are accessible is one of my favourite thing to do.",
     emailAddress: "dv.davidadeyemi@gmail.com",
     linkedIn: "https://www.linkedin.com/in/david-adeyemi-085a171b2",
     gitHub: "https://github.com/David-Ade-Creator",
     whatsapp: "+447442580406",
-    aboutMeSubheader: "Dave the software Developer",
+    aboutMeSubheader: "Dave the software Engineer",
     aboutPhoto: "/images/aboutphoto2.jpeg",
-    aboutMeDescription1: "Hello! My name is David and I enjoy creating things that live on the internet. My interest in software engineering started back in 2019 when I decided to try creating a landing page for an ecommerce shoe platform — this taught me alot about HTML & CSS!",
+    aboutMeDescription1: "Hello! My name is David and I enjoy creating things that live on the internet. My interest in software engineering started back in 2019 when I decided to try creating a landing page for an ecommerce shoe platform — this taught me alot about HTML & CSS and JavaScript, from there i proceeded into advancing my knowledge as a software engineer in everyway possible, presently rounding up my masters as a data scientist.",
     aboutMeDescription2: "Hello! My name is David and I enjoy creating things that live on the internet.",
-    skills: ["Html", "Css", "Javascript", "Typescript", "React", "Next", "Gatsby", "Node js", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
+    skills: ["Html", "Css", "Javascript","Python","Typescript", "React", "Next", "Node js", "Graphql","MySql","MongoDB", "Docker", "Strapi"],
     experience: [{
         name: "Mind2mentor",
             companyName: "Junior Software Engineer @ Mind2Mentor",
             position: "Junior Software Engineer",
             duration: "2021, Jan 11 - 2021, April 27",
             responsibilities: [
-                "Created react pages using ant design for the e-commerce platform.",
-                "Delivered clean efficient software under a Jira day-to-day flow.",
-                "Written backend controllers in typescript using typeOrm.",
-                "Worked on creating a whatsapp chatbot using botkit and WATI as the CRM provider.",
-                "Delivered performance-driven and user-centric web app that met all business requirements."
+                "Collaborated with team members to create applications' system analysis based on client requirements.",
+                "Worked on creating a WhatsApp chatbot using botkit and WATI as the CRM provider.",
+                "Built the API business logic and designed flexible database models.",
+                "Worked on module which used google OAuth, and google Geolocation API.",
+                "Operated in virtualised environment using Docker."
             ]
         },
         {
@@ -65,9 +65,9 @@ export const userData = {
             duration: "June 04,2021 to December 30,2021",
             responsibilities: [
                 "Designed prototype and architect software system that work and meets global standards.",
-                "Facilitated customization of systems by encouraging software engineering team to adopt emerging standard for software application development architecture and tools.",
-                "Collaborated on all stages of systems development lifecycle from requirement gathering to production releases.",
-                "Revised, modularized and updated old code bases to modern development standards, reducing operating costs and improving functionality."
+                "Performed thorough application performance and function analysis, improving usability in line with client requirements.",
+                "Integrated Paypal as payment gateway for the application with a receipt printed after each payment.",
+                "Implemented an Auto-Backup feature that automatically saves changes made in the Inpage editor, allowing users to continue from the last edits."
             ]
         },
     ],
@@ -83,8 +83,8 @@ export const userData = {
         },
         {
             icon:"uil-credit-card-search",
-            title: "SEO",
-            description: "SEO is a great way to get more customers,Can help in increasing the quantity of traffic to your website, and rank your site higher in search results."
+            title: "Data Science",
+            description: "As a data scientist i aim to build algorithms and design experiments to merge, manage, interrogate and extract data to supply tailored reports to colleagues, customers or the wider organisation"
         }
     ],
 
@@ -99,23 +99,41 @@ export const userData = {
             stacks: ["React","Redux", "Nodejs", "Graphql", "ApolloClient","Ant Design","Less" ,  "Heroku", "Amazon s3", "Heroku", "Netlify"]
         },
         {
-            title: "Quea",
+            title: "Ecomvision",
             isFeatured: true,
+            description: "Ecomvision provides important overview information using the dashboard and also provides other important pages that show detailed informations from informations fetched from the database",
+            image: "/images/ecomvision.png",
+            url: "https://ecomvision.netlify.app",
+            repo:"https://github.com/David-Ade-Creator/dash-client",
+            stacks: ["React","Redux", "Nodejs", "Express", "Material UI", "Render", "Netlify"]
+        },
+        {
+            title: "Ecommersb",
+            isFeatured: true,
+            description: "A basic ecommerce web application with stripe payment checkout functionality",
+            image: "/images/ecommersb.png",
+            url: "https://ecommersb.netlify.app",
+            repo:"https://github.com/David-Ade-Creator/strapi_ecom_client",
+            stacks: ["React","Redux","Stripe Payment gateway","Material UI", "Render", "Netlify"]
+        },
+        {
+            title: "Quea",
+            isFeatured: false,
             description: "A web application to know, ask and learn from the community. Ask and get answers on Quea.",
             image: "/images/quea.png",
             url: "https://quea.netlify.app",
             repo:"https://github.com/David-Ade-Creator/quea",
             stacks: ["React","Redux", "Nodejs", "Express", "Ant-Design", "Aws-s3", "Heroku", "Netlify"],
         },
-        {
-            title: "Clause Reservation",
-            isFeatured: true,
-            description: "Why make calls or stress over dinner reservations when it can be done with few clicks, Clause reservation offers online reservation alternative.",
-            image: "/images/clause.png",
-            url: "https://clause-reservation.herokuapp.com",
-            repo:"https://github.com/David-Ade-Creator/dinner-reservation",
-            stacks: ["React", "Redux", "Nodejs", "Express", "React-Bootstrap", "Aws-s3", "Heroku"],
-        },
+        // {
+        //     title: "Clause Reservation",
+        //     isFeatured: true,
+        //     description: "Why make calls or stress over dinner reservations when it can be done with few clicks, Clause reservation offers online reservation alternative.",
+        //     image: "/images/clause.png",
+        //     url: "https://clause-reservation.herokuapp.com",
+        //     repo:"https://github.com/David-Ade-Creator/dinner-reservation",
+        //     stacks: ["React", "Redux", "Nodejs", "Express", "React-Bootstrap", "Aws-s3", "Heroku"],
+        // },
         {
             title: "Halftimers Blog",
             isFeatured: false,
@@ -134,15 +152,15 @@ export const userData = {
             repo:"https://github.com/David-Ade-Creator/m3movieclient",
             stacks : ["React", "Nodejs", "Express","Heroku","Imdb Api", "Netlify"],
         },
-        {
-            title: "Cryptoverse",
-            isFeatured: false,
-            description : "An applications that helps to keep user updated with all changes and current updates from the crypto worlds.",
-            image: "/images/cryptoverse.png",
-            url: "https://crytoverse.netlify.app",
-            repo:"https://github.com/David-Ade-Creator/cryptoverse",
-            stacks: ["React", "ReduxToolkit", "RapidApi"],
-        },
+        // {
+        //     title: "Cryptoverse",
+        //     isFeatured: false,
+        //     description : "An applications that helps to keep user updated with all changes and current updates from the crypto worlds.",
+        //     image: "/images/cryptoverse.png",
+        //     url: "https://crytoverse.netlify.app",
+        //     repo:"https://github.com/David-Ade-Creator/cryptoverse",
+        //     stacks: ["React", "ReduxToolkit", "RapidApi"],
+        // },
     ],
     webdesigns : [
         {
